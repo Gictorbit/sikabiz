@@ -10,6 +10,7 @@ type UserDBPgConn interface {
 	GetPgConn() *pgxpool.Pool
 
 	InsertUserData(ctx context.Context, user User) error
+	GetUserById(ctx context.Context, userID string) (*User, error)
 }
 
 var _ UserDBPgConn = &UserDB{}
