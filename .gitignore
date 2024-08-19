@@ -26,4 +26,5 @@ go.work.sum
 .idea
 .vscode
 dist
+userdata
 
